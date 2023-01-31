@@ -1,0 +1,114 @@
+<h1 class="dash">Dashboard</h1>
+<mat-grid-list cols="2" rowHeight="350px">
+  <app-widget-line></app-widget-line>
+</mat-grid-list>
+
+<div class="grid-container">
+  <h1 class="mat-h1" style="margin-top: 5rem">Angular or React?</h1>
+  <mat-grid-list cols="2" rowHeight="350px">
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <h2>Angular</h2>
+          <div class="procons-tab">
+            <h3>Pros</h3>
+            <div>
+              <ul>
+                <li>
+                  Angular is a full featured framework. A lot of built-in
+                  functionality for routing and forms
+                </li>
+                <li>
+                  Has a strong component architecture, making it easy to create
+                  reusable code
+                </li>
+              </ul>
+            </div>
+            <h3>Cons</h3>
+            <div>
+              <ul>
+                <li>Angular has a steeper learning curve</li>
+                <li>
+                  Angular can have performance issues when working with large
+                  data sets
+                </li>
+                <li>
+                  Compared to React, the structure of the files and components
+                  are more complicated to navigate through
+                </li>
+              </ul>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            <button
+              mat-icon-button
+              class="more-button"
+              [matMenuTriggerFor]="menu"
+              aria-label="Toggle menu"
+            >
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <h2>React</h2>
+          <div class="procons-tab">
+            <h3>Pros</h3>
+            <div>
+              <ul>
+                <li>Good for building fast and modern web applications</li>
+                <li>
+                  Compared to Angular the component based architecture is more
+                  understandable and readable
+                </li>
+                <li>
+                  Reacts virtual DOM makes it efficient for creating large and
+                  complex applications
+                </li>
+              </ul>
+            </div>
+            <h3>Cons</h3>
+            <div>
+              <ul>
+                <li>
+                  React is more of a library and not a framework, which means it
+                  doesnt have as many built-in features as Angular
+                </li>
+                <li>
+                  Reacts JSX syntax can be confusing for developers who are new
+                  to it
+                </li>
+              </ul>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "../src/app/widgets/line/line.component.scss"
+    ],
+    "names": [],
+    "file": "line.component.css"
+}
